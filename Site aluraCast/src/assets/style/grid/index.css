@@ -1,0 +1,20 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    /* criou duas linhas e duas colunas */
+    "aside header" 
+    "aside main";
+    grid-template-columns: auto 1fr;
+}
+/* grid-template-columns: auto - (ajusta de acordo com a primeira coluna)  1fr (1 fraçao do espaço q sobrou); */
+/* aqui definimos os locais em que cada item vai ficar */
+.cabecalho {
+    grid-area: header;
+}
+.menu-lateral{
+    grid-area: aside;
+}
+
+.principal {
+    grid-area: main;
+}
