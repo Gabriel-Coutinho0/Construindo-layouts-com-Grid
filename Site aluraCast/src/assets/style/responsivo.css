@@ -1,5 +1,4 @@
 @media only screen and (max-width: 1023px) {
-
     .menu-lateral,
     .rodape,
     .cabecalho,
@@ -17,10 +16,13 @@
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
+    } 
     .secao-horizontal .cartao{
         column-gap: 0.5rem;
+    }
+    .secao__cartoes{
+        row-gap: 0.5rem;
+        --gap-coluna: 1rem ;
     }
     .secao-horizontal .cartao__imagem {
         height: 56px;
@@ -71,6 +73,9 @@
         font: 700 16px/22px 'Open Sans', sans-serif;
     }
 
+    .secao__cartoes{
+       --gap-coluna: 1.5rem;
+    }   
     .secao-horizontal .cartao__subtitulo {
         font: 400 14px/19px 'Open Sans', sans-serif;
         width: 100%;
